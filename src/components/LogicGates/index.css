@@ -10,7 +10,7 @@
 .divLogicGate,
 .divLogicGateSelected {
     flex: 1;
-    height: 75px;
+    height: 50px;
     margin: 10px;
     cursor: pointer;
 }

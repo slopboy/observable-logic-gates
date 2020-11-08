@@ -11,14 +11,15 @@
     vertical-align: top;
     width: 50%;
     display: inline-block;
+    padding-top: 15px;
 }
 
 .divSelectedLogicGateTruthTable {
     flex: 1;
     vertical-align: top;
-    padding-top: 15px;
     width: 50%;
     display: inline-block;
+    padding-top: 30px;
 }
 
 .divSelectedLogicGateDisplayName {

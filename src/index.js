@@ -45,7 +45,7 @@ class Main extends React.Component {
         <table width="100%">
           <tbody>
             <tr>
-              <td width="25%">
+              <td width="15%">
                 <LogicGates
                   logicGates={logicGates}
                   selectedLogicGateId={selectedLogicGate?.id}
