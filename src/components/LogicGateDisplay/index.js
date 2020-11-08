@@ -1,6 +1,7 @@
 import React from 'react'
 import './index.css'
 import LogicGateDiagram from '../LogicGateDiagram'
+import LogicGateTruthTable from '../LogicGateTruthTable'
 
 export default class LogicGateDisplay extends React.Component {
   render() {
@@ -10,18 +11,28 @@ export default class LogicGateDisplay extends React.Component {
       return (<div id="divLogicGateDisplay" className="divLogicGateDisplay"/>)
     }
 
-    const { displayDetails } = logicGate
+    const { displayDetails, truthTable } = logicGate
 
     return (
       <div id="divLogicGateDisplay" className="divLogicGateDisplay">
-        <div id="divSelectedLogicGateDisplayName" className="divSelectedLogicGateDisplayName">
-          {displayDetails.displayName}
+        <LogicGateDiagram logicGate={logicGate}/>
+
+        <div id="divSelectedLogicGateInformation" className="divSelectedLogicGateInformation">
+          <div id="divSelectedLogicGateDisplayName" className="divSelectedLogicGateDisplayName">
+            {displayDetails.displayName}
+          </div>
+          <div id="divSelectedLogicGateFunction" className="divSelectedLogicGateFunction">
+            {displayDetails.displayFunction}
+          </div>
+          <div id="divSelectedLogicGateDescription" className="divSelectedLogicGateDescription">
+            {displayDetails.description}
+          </div>
         </div>
-        <div id="divSelectedLogicGateDiagram" className="divSelectedLogicGateDiagram">
-          <LogicGateDiagram logicGate={logicGate}/>
-        </div>
-        <div id="divSelectedLogicGateDescription" className="divSelectedLogicGateDescription">
-          {displayDetails.description}
+
+        <div id="divSelectedLogicGateTruthTable" className="divSelectedLogicGateTruthTable">
+          {truthTable &&
+          <LogicGateTruthTable truthTable={truthTable} />
+          }
         </div>
       </div>
     )

@@ -1,0 +1,19 @@
+.tblLogicGateTruthTable{
+    flex: 1;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.truthTableHeader{
+    font-weight: bolder;
+    padding: 5px;
+}
+
+.truthTableBody{
+    border-top: 2px solid black;
+}
+
+.truthTableValue{
+    font-weight: bold;
+    padding: 5px;
+}

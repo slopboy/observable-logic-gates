@@ -46,7 +46,11 @@ class Main extends React.Component {
           <tbody>
             <tr>
               <td width="25%">
-                <LogicGates logicGates={logicGates} selectLogicGate={(id) => this.selectLogicGate(id)}/>
+                <LogicGates
+                  logicGates={logicGates}
+                  selectedLogicGateId={selectedLogicGate?.id}
+                  selectLogicGate={(id) => this.selectLogicGate(id)}
+                />
               </td>
               <td width="10px"></td>
               <td>

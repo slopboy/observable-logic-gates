@@ -8,29 +8,39 @@ export const LOGIC_GATES = [
       description: 'not A and B',
       colour: 'blue',
       image: '',
+      displayFunction: '(a, b) => (!(a && b))',
     },
     inputPins: [
       {
         id: 1,
+        name: 'A',
         displayName: 'A',
         asciiValue: '97',
-        pin: 'A',
       },
       {
         id: 2,
+        name: 'B',
         displayName: 'B',
         asciiValue: '98',
-        pin: 'B',
       }
     ],
     outputPins: [
       {
         id: 1,
+        name: 'out',
         displayName: 'OUT',
-        pin: 'out',
       }
     ],
     logicFunction: (a, b) => (!(a && b)),
+    truthTable: {
+      columns: ['A', 'B', 'Out'],
+      values: [
+        [0, 0, 1],
+        [1, 0, 1],
+        [0, 1, 1],
+        [1, 1, 0],
+      ]
+    },
   },
   {
     id: 2,
@@ -40,6 +50,7 @@ export const LOGIC_GATES = [
       description: 'A and B',
       colour: 'purple',
       image: '',
+      displayFunction: '(a, b) => (a && b)',
     },
     inputPins: [
       {
@@ -62,7 +73,16 @@ export const LOGIC_GATES = [
         pin: 'out',
       }
     ],
-    logicFunction: (a, b) => ((a && b)),
+    logicFunction: (a, b) => (a && b),
+    truthTable: {
+      columns: ['A', 'B', 'Out'],
+      values: [
+        [0, 0, 0],
+        [1, 0, 0],
+        [0, 1, 0],
+        [1, 1, 1],
+      ]
+    },
   },
   {
     id: 3,
@@ -72,6 +92,7 @@ export const LOGIC_GATES = [
       description: 'not A',
       colour: 'green',
       image: '',
+      displayFunction: '(a) => (!a)',
     },
     inputPins: [
       {
@@ -89,5 +110,12 @@ export const LOGIC_GATES = [
       }
     ],
     logicFunction: (a) => (!a),
+    truthTable: {
+      columns: ['A', 'Out'],
+      values: [
+        [0, 1],
+        [1, 0],
+      ]
+    },
   },
 ];

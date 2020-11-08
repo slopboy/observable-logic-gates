@@ -6,8 +6,24 @@
     padding: 20px;
 }
 
+.divSelectedLogicGateInformation {
+    flex: 1;
+    vertical-align: top;
+    width: 50%;
+    display: inline-block;
+}
+
+.divSelectedLogicGateTruthTable {
+    flex: 1;
+    vertical-align: top;
+    padding-top: 15px;
+    width: 50%;
+    display: inline-block;
+}
+
 .divSelectedLogicGateDisplayName {
     flex: 1;
+    text-align: left;
     font-weight: bold;
     font-size: 20px;
     padding: 15px;
@@ -16,4 +32,11 @@
 .divSelectedLogicGateDescription {
     flex: 1;
     padding: 15px;
+    text-align: left;
+}
+
+.divSelectedLogicGateFunction {
+    flex: 1;
+    padding: 15px;
+    text-align: left;
 }
