@@ -15,13 +15,13 @@ export const LOGIC_GATES = [
         id: 1,
         name: 'A',
         displayName: 'A',
-        asciiValue: '97',
+        asciiValues: [65, 97],
       },
       {
         id: 2,
         name: 'B',
         displayName: 'B',
-        asciiValue: '98',
+        asciiValues: [66, 98],
       }
     ],
     outputPins: [
@@ -56,13 +56,13 @@ export const LOGIC_GATES = [
       {
         id: 1,
         displayName: 'A',
-        asciiValue: '97',
+        aasciiValues: [65, 97],
         pin: 'A',
       },
       {
         id: 2,
         displayName: 'B',
-        asciiValue: '98',
+        asciiValues: [66, 98],
         pin: 'B',
       }
     ],
@@ -98,7 +98,7 @@ export const LOGIC_GATES = [
       {
         id: 1,
         displayName: 'A',
-        asciiValue: '97',
+        asciiValues: [65, 97],
         pin: 'A',
       },
     ],
