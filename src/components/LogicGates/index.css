@@ -1,0 +1,17 @@
+.divLogicGates {
+    flex: 1;
+    flex-direction: column;
+    min-height: 500px;
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+.divLogicGate {
+    flex: 1;
+    height: 75px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}

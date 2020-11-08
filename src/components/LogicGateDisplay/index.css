@@ -1,0 +1,19 @@
+.divLogicGateDisplay {
+    flex: 1;
+    min-height: 500px;
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+.divSelectedLogicGateDisplayName {
+    flex: 1;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.divSelectedLogicGateDescription {
+    flex: 1;
+    padding: 15px;
+}
